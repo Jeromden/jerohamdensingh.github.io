@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeroham Melchizedak Densingh | Professional Profile</title>
+<meta name="description" content="Professional profile of Jeroham Melchizedak Densingh — Account Manager, Corporate Visual Strategist & PowerPoint Specialist.">
+<style>
+:root{
+  --bg:#090b0f;
+  --panel:#10141b;
+  --panel2:#151a22;
+  --text:#f3f5f7;
+  --muted:#9aa5b1;
+  --line:rgba(255,255,255,.10);
+  --accent:#72d6c9;
+  --accent2:#b7a5ff;
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 85% 15%,rgba(114,214,201,.08),transparent 28%),
+    radial-gradient(circle at 15% 80%,rgba(183,165,255,.06),transparent 28%),
+    var(--bg);
+  color:var(--text);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.6;
+}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+.page{
+  min-height:100vh;
+  padding:70px 28px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.container{width:min(var(--max),100%)}
+.cover{
+  position:relative;
+  min-height:100vh;
+  overflow:hidden;
+}
+.cover:before{
+  content:"";
+  position:absolute;
+  width:520px;height:520px;
+  border:1px solid rgba(114,214,201,.14);
+  border-radius:50%;
+  right:-180px;top:-170px;
+}
+.cover:after{
+  content:"";
+  position:absolute;
+  width:360px;height:360px;
+  border:1px solid rgba(183,165,255,.10);
+  border-radius:50%;
+  left:-190px;bottom:-170px;
+}
+.eyebrow{
+  color:var(--accent);
+  text-transform:uppercase;
+  letter-spacing:.20em;
+  font-size:.74rem;
+  font-weight:700;
+  margin-bottom:24px;
+}
+h1{
+  font-size:clamp(3.4rem,9vw,8rem);
+  line-height:.92;
+  letter-spacing:-.065em;
+  margin:0;
+  max-width:900px;
+}
+.subtitle{
+  margin:28px 0 0;
+  color:#c7cdd4;
+  font-size:clamp(1rem,2vw,1.35rem);
+  max-width:850px;
+}
+.contact{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px 22px;
+  margin-top:34px;
+  color:var(--muted);
+  font-size:.94rem;
+}
+.contact span:before{
+  content:"";
+  display:inline-block;
+  width:5px;height:5px;
+  border-radius:50%;
+  background:var(--accent);
+  margin:0 10px 2px 0;
+}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:46px}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:13px 19px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:rgba(255,255,255,.035);
+  color:var(--text);
+  cursor:pointer;
+  transition:.22s ease;
+}
+.btn:hover{transform:translateY(-2px);border-color:rgba(114,214,201,.5);background:rgba(114,214,201,.07)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#07100f;font-weight:750}
+.scroll-note{
+  position:absolute;bottom:34px;left:28px;
+  color:var(--muted);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;
+}
+.section-head{margin-bottom:34px}
+.section-kicker{
+  color:var(--accent);
+  font-size:.72rem;
+  font-weight:750;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+}
+h2{font-size:clamp(2rem,5vw,3.7rem);letter-spacing:-.045em;line-height:1.05;margin:9px 0 0}
+.lead{color:var(--muted);max-width:800px;margin:14px 0 0}
+#dashboard{background:rgba(255,255,255,.012)}
+.nav-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+.nav-card{
+  min-height:150px;
+  padding:24px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018));
+  transition:.22s ease;
+  cursor:pointer;
+}
+.nav-card:hover{transform:translateY(-4px);border-color:rgba(114,214,201,.45)}
+.nav-number{color:var(--accent);font-size:.75rem;font-weight:700;letter-spacing:.12em}
+.nav-card h3{font-size:1.2rem;margin:26px 0 4px}
+.nav-card p{color:var(--muted);font-size:.88rem;margin:0}
+.section{
+  border-top:1px solid var(--line);
+  padding-top:90px;
+  padding-bottom:40px;
+}
+.summary{
+  font-size:1.15rem;
+  color:#d7dce1;
+  max-width:950px;
+}
+.metric-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  margin-top:32px;
+}
+.metric{
+  border:1px solid var(--line);
+  background:var(--panel);
+  border-radius:14px;
+  padding:23px;
+}
+.metric strong{display:block;font-size:2.15rem;letter-spacing:-.04em}
+.metric span{color:var(--muted);font-size:.83rem}
+.competencies{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+}
+.chip{
+  padding:9px 13px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:var(--panel);
+  color:#dbe0e5;
+  font-size:.86rem;
+}
+.timeline{position:relative;margin-top:30px}
+.timeline:before{
+  content:"";position:absolute;left:9px;top:0;bottom:0;width:1px;background:var(--line)
+}
+.role{
+  position:relative;
+  padding:0 0 42px 42px;
+}
+.role:before{
+  content:"";position:absolute;left:4px;top:8px;width:11px;height:11px;
+  border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(114,214,201,.08)
+}
+.role-top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
+.role h3{font-size:1.25rem;margin:0}
+.role .date{color:var(--accent);font-size:.78rem;white-space:nowrap;padding-top:4px}
+.role-company{color:var(--muted);font-size:.88rem;margin-top:3px}
+.role ul{margin:16px 0 0;padding-left:19px;color:#cbd1d7}
+.role li{margin:8px 0}
+.card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.info-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:25px
+}
+.info-card h3{margin:0 0 9px;font-size:1.1rem}
+.info-card p{margin:0;color:var(--muted)}
+footer{
+  border-top:1px solid var(--line);
+  padding:35px 0 70px;
+  color:var(--muted);font-size:.82rem;
+}
+.back{margin-top:25px}
+@media(max-width:800px){
+  .page{padding:55px 20px}
+  .nav-grid,.metric-grid,.card-grid{grid-template-columns:1fr 1fr}
+  .role-top{display:block}
+  .role .date{display:block;margin-top:5px}
+}
+@media(max-width:540px){
+  .nav-grid,.metric-grid,.card-grid{grid-template-columns:1fr}
+  h1{font-size:3.6rem}
+  .contact{display:block}
+  .contact span{display:block;margin:8px 0}
+  .scroll-note{left:20px}
+}
+</style>
+</head>
+<body>
+
+<main>
+<section class="page cover" id="cover">
+  <div class="container">
+    <div class="eyebrow">Professional Profile · Global Operations</div>
+    <h1>Jeroham<br>Melchizedak<br>Densingh</h1>
+    <p class="subtitle">Account Manager | Corporate Visual Strategist &amp; PowerPoint Specialist | Global Operations</p>
+    <div class="contact">
+      <span>+91 99 3000 9020</span>
+      <span>j4jeroham@hotmail.com</span>
+      <span>Mumbai, Maharashtra, India</span>
+    </div>
+    <div class="actions">
+      <a class="btn primary" href="#dashboard">Explore Profile <span>→</span></a>
+      <a class="btn" href="#experience">View Experience</a>
+    </div>
+  </div>
+  <div class="scroll-note">Scroll to explore</div>
+</section>
+
+<section class="page" id="dashboard">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">Profile Navigation</div>
+      <h2>Explore the profile.</h2>
+      <p class="lead">Select a section to move directly to the information you need.</p>
+    </div>
+    <div class="nav-grid">
+      <a class="nav-card" href="#summary"><div class="nav-number">01</div><h3>Professional Summary</h3><p>Career scope, account ownership and professional positioning.</p></a>
+      <a class="nav-card" href="#competencies"><div class="nav-number">02</div><h3>Core Competencies</h3><p>Account, operations, leadership and presentation capabilities.</p></a>
+      <a class="nav-card" href="#experience"><div class="nav-number">03</div><h3>Professional Experience</h3><p>Career progression and responsibilities at Integreon.</p></a>
+      <a class="nav-card" href="#deployment"><div class="nav-number">04</div><h3>International Deployment</h3><p>Mexico City site establishment, leadership and operational uplift.</p></a>
+      <a class="nav-card" href="#education"><div class="nav-number">05</div><h3>Education &amp; Qualifications</h3><p>Aviation and academic qualifications.</p></a>
+      <a class="nav-card" href="#languages"><div class="nav-number">06</div><h3>Languages &amp; Contact</h3><p>Language capabilities and direct contact details.</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="page section" id="summary">
+  <div class="container">
+    <div class="section-head"><div class="section-kicker">01 · Professional Summary</div><h2>Account ownership with an operational mindset.</h2></div>
+    <p class="summary">Account Manager with 6+ years of progressive growth at Integreon, advancing through every operational tier from Presentation Specialist to full account ownership. Manages a portfolio of 7 international clients across Finance, Insurance, Healthcare AI, and Marketing in the US, UK, and Europe — achieving 100% client retention and satisfaction. Led a cross-cultural team of 96 associates across 16 teams during an international deployment to establish Integreon's Mexico City site from the ground up. Ranked in the top 5–8% of professional PowerPoint users globally. Holds an FAA-approved Commercial Pilot License (CPL) with Single and Multi-Engine Instrument Ratings — equivalent to a Diploma-level qualification — reflecting the technical precision, systematic thinking, and high-stakes decision-making applied across every client engagement.</p>
+    <div class="metric-grid">
+      <div class="metric"><strong>6+</strong><span>Years of progressive growth</span></div>
+      <div class="metric"><strong>7</strong><span>International client accounts</span></div>
+      <div class="metric"><strong>100%</strong><span>Client retention &amp; satisfaction</span></div>
+      <div class="metric"><strong>96</strong><span>Associates led internationally</span></div>
+    </div>
+    <a class="btn back" href="#dashboard">← Back to navigation</a>
+  </div>
+</section>
+
+<section class="page section" id="competencies">
+  <div class="container">
+    <div class="section-head"><div class="section-kicker">02 · Core Competencies</div><h2>Capabilities across client, people and delivery.</h2></div>
+    <div class="competencies">
+      <span class="chip">Account Management</span><span class="chip">Corporate Communications</span><span class="chip">KPI Management</span>
+      <span class="chip">Client Retention &amp; Satisfaction</span><span class="chip">Strategic Planning</span><span class="chip">Operational Excellence</span>
+      <span class="chip">Process Improvement</span><span class="chip">Root Cause Analysis (RCA)</span><span class="chip">Quality Assurance</span>
+      <span class="chip">People Leadership &amp; Coaching</span><span class="chip">Cross-Cultural Team Management</span><span class="chip">Training &amp; Development</span>
+      <span class="chip">Microsoft PowerPoint</span><span class="chip">Microsoft Excel</span><span class="chip">Google Slides &amp; Lucidchart</span>
+      <span class="chip">Business Development</span><span class="chip">Visual Communication</span><span class="chip">Workflow Design</span>
+    </div>
+    <a class="btn back" href="#dashboard">← Back to navigation</a>
+  </div>
+</section>
+
+<section class="page section" id="experience">
+  <div class="container">
+    <div class="section-head"><div class="section-kicker">03 · Professional Experience</div><h2>Progressive responsibility at Integreon.</h2><p class="lead">Business Enablement Services · Jan 2020 – Present · Mumbai, with deployments to Noida &amp; Mexico City</p></div>
+    <div class="timeline">
+
+      <article class="role">
+        <div class="role-top"><div><h3>Account Manager</h3><div class="role-company">Integreon</div></div><div class="date">Jan 2026 – Present</div></div>
+        <ul>
+          <li>Own a portfolio of 7 international client accounts across Finance, Insurance, Healthcare AI, and Marketing in the US, UK, and Europe — maintaining 100% client retention and satisfaction across all accounts.</li>
+          <li>Appointed central account owner for a major multi-division enterprise client spanning seven global divisions, approved at VP level.</li>
+          <li>Serve as the primary point of contact and accountability for each account, managing end-to-end client relationships from brief intake through strategic delivery.</li>
+          <li>Drive account growth through proactive communication, performance reviews, and continuous alignment with client objectives.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-top"><div><h3>End-to-End Client Owner (E2E)</h3><div class="role-company">Integreon</div></div><div class="date">May 2025 – Jan 2026</div></div>
+        <ul>
+          <li>Sole owner of the complete client workflow — direct brief intake from client, through production and quality assurance, to final delivery back to client — eliminating intermediary layers for high-complexity accounts.</li>
+          <li>Trusted with direct client-facing ownership for specialised project types requiring advanced design, communication, and judgement.</li>
+          <li>Operated as a senior delivery resource across multiple client teams, supporting account-level continuity and quality.</li>
+        </ul>
+      </article>
+
+      <article class="role" id="deployment">
+        <div class="role-top"><div><h3>Senior Team Lead — Mexico City International Deployment</h3><div class="role-company">Integreon</div></div><div class="date">Sep 2024 – Apr 2025</div></div>
+        <ul>
+          <li>Deployed internationally to establish and stabilise Integreon's new Mexico City operational site, building the operation from the ground up.</li>
+          <li>Managed 96 associates across 16 teams, overseeing cross-cultural team dynamics between Indian and Mexican operations.</li>
+          <li>Led training and onboarding across three associate batches, ensuring full production readiness from day one.</li>
+          <li>Conducted RCA sessions, identified systemic process gaps, and drove measurable improvements in turnaround time and output quality.</li>
+          <li>Collaborated with Quality Coaching team to maintain training efficacy and sustained performance tracking.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-top"><div><h3>Operational Excellence Specialist</h3><div class="role-company">Integreon</div></div><div class="date">Apr 2024 – Sep 2024</div></div>
+        <ul>
+          <li>Selected for a specialist five-member team dedicated to process standardisation, efficiency improvement, and operational uplift across the wider operation.</li>
+          <li>Partnered directly with senior management to redesign workflows and elevate team performance metrics.</li>
+          <li>Conducted daily cross-shift review sessions addressing negative client feedback and driving corrective action to prevent recurrence.</li>
+          <li>Developed process adherence tools and workflow refreshers subsequently adopted across the broader operation.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-top"><div><h3>Subject Matter Expert</h3><div class="role-company">Integreon</div></div><div class="date">Sep 2023 – Apr 2024</div></div>
+        <ul>
+          <li>Provided expert-level guidance on high-complexity, client-critical PowerPoint deliverables, upholding quality and delivery standards.</li>
+          <li>Supported underperforming teams in KPI recovery and client benchmark achievement under tight deadlines.</li>
+          <li>Primary escalation resource for complex, high-stakes deliverables across multiple accounts.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-top"><div><h3>Quality Coach</h3><div class="role-company">Integreon</div></div><div class="date">Jun 2023 – Sep 2023</div></div>
+        <ul>
+          <li>Coached teams to elevate output quality to client-specified standards across targeted project types.</li>
+          <li>Identified recurring quality gaps, designed structured corrective workflows, and tracked measurable improvement outcomes.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-top"><div><h3>On-the-Job Training Team Lead — Noida</h3><div class="role-company">Integreon</div></div><div class="date">Jan 2023 – Jun 2023</div></div>
+        <ul>
+          <li>Managed training and onboarding of new associates at the Noida site, ensuring seamless integration into live production.</li>
+          <li>Developed tailored training materials and process guides aligned to client requirements and operational standards.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-top"><div><h3>Direct-to-Client Operator, Level 2</h3><div class="role-company">Integreon</div></div><div class="date">Aug 2022 – Jan 2023</div></div>
+        <ul>
+          <li>Executed advanced PowerPoint operations with direct-to-client delivery — trusted to bypass the standard Quality Check process, reflecting consistent excellence in output accuracy and client alignment.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-top"><div><h3>Early Career at Integreon</h3><div class="role-company">Temporary Associate → Level 1 Operator → Level 2 Operator</div></div><div class="date">Jan 2020 – Jul 2022</div></div>
+        <ul>
+          <li>Built foundational expertise in PowerPoint production, client delivery workflows, and data authentication.</li>
+          <li>Trusted with direct-to-client delivery (bypassing QC) by April 2021.</li>
+        </ul>
+      </article>
+    </div>
+    <a class="btn back" href="#dashboard">← Back to navigation</a>
+  </div>
+</section>
+
+<section class="page section" id="education">
+  <div class="container">
+    <div class="section-head"><div class="section-kicker">05 · Education &amp; Qualifications</div><h2>Aviation discipline. Technical foundation.</h2></div>
+    <div class="card-grid">
+      <div class="info-card">
+        <h3>Commercial Pilot License (CPL)</h3>
+        <p>FAA Approved · Single &amp; Multi-Engine Instrument Rating<br>2017 – 2019<br><br>2Fly Airborne, Florida, USA<br>FAA-approved qualification, equivalent to Diploma level. Discontinued to pursue corporate career.</p>
+      </div>
+      <div class="info-card">
+        <h3>Aircraft Maintenance Engineering (AME)</h3>
+        <p>Aircraft Powerplant Technology<br>2014 – 2017<br><br>Thakur Institute of Aviation Technology, Mumbai</p>
+      </div>
+      <div class="info-card">
+        <h3>HSC — Computer Science</h3>
+        <p>Engineering Drawing, Carpentry, Electricals, Metal Fabrication<br>2014<br><br>Nirmal Jr. College of Science &amp; Commerce, Kandivali</p>
+      </div>
+      <div class="info-card">
+        <h3>SSC</h3>
+        <p>2012<br><br>Fr. Agnel Technical High School, Bandra</p>
+      </div>
+    </div>
+    <a class="btn back" href="#dashboard">← Back to navigation</a>
+  </div>
+</section>
+
+<section class="page section" id="languages">
+  <div class="container">
+    <div class="section-head"><div class="section-kicker">06 · Languages &amp; Contact</div><h2>Available for global client-facing work.</h2></div>
+    <div class="card-grid">
+      <div class="info-card">
+        <h3>Languages</h3>
+        <p>English — Full Professional<br>Hindi — Conversational<br>Tamil — Conversational<br>Marathi — Conversational</p>
+      </div>
+      <div class="info-card">
+        <h3>Contact</h3>
+        <p>+91 99 3000 9020<br>j4jeroham@hotmail.com<br>Mumbai, Maharashtra, India</p>
+      </div>
+    </div>
+    <div class="actions">
+      <a class="btn primary" href="#cover">↑ Back to top</a>
+      <a class="btn" href="mailto:j4jeroham@hotmail.com">Contact Jeroham</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">Jeroham Melchizedak Densingh · Account Manager · Corporate Visual Strategist &amp; PowerPoint Specialist</div>
+</footer>
+
+</body>
+</html>
